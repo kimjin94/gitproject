@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	var num = ['사당','교대','방배','강남'];
+	document.write(num+"<br>");				//사당,교대,방배,강남
+	document.write(typeof(num)+"<br>");		//object
+
+	// join():문자('-')를 기준으로 배열 값들을 하나의 문자형 데이터로 결합
+	document.write(num.join('-')+"<br>");				//사당-교대-방배-강남
+	document.write(typeof(num.join('-'))+"<br>");		//string
+	
+	
+	// reverse() : 배열 객체의 값 순서를 반대로 바꾸어 주는 함수
+	document.write(num.reverse()+"<br>");				//강남,방배,교대,사당
+	document.write(typeof(num.reverse())+"<br>");		//object
+	
+	// sort() :  배열 객체의 값들을 오름차순으로 정렬(문자 : 사전순 정렬)
+	document.write(num.sort()+"<br>");				//강남,교대,방배,사당
+	document.write(typeof(num.sort())+"<br>");		//object
+	
+	// 배열 객채의 값들을 내람차순 정렬 (문자 : 사전순역설)
+	document.write(num.sort().reverse()+"<br>");				//사당,방배,교대,강남
+	document.write(typeof(num.sort().reverse())+"<br>");		//object
+	
+</script>
+
+</body>
+</html>

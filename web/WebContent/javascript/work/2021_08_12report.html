@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+
+	var num = [];
+	for (var i = 0; i < 6; i++){
+		num[i] = Math.ceil(Math.random() * 45);	
+		 for (var j = 0; j < i; j++){	
+			 if (num[i] == num[j]){
+				i--;	
+				break;
+			}
+		 }			
+
+	}
+	
+	document.write(num.sort(function(a, b) { 
+		return a - b;
+	})+"<br>");
+
+	
+
+</script>
+</body>
+</html>

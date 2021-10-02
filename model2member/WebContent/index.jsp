@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+모델2 회원관리 
+
+<script>
+//	location.href="member/loginform.jsp";
+ 	location.href="./LoginForm.do";
+</script>
+
+
+</body>
+</html>

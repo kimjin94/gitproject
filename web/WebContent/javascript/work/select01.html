@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>select객체</title>
+<script>
+	function check(){
+		var sel = document.getElementById("sel");
+		
+		document.bgColor = sel.value;
+		alert(sel.value+"를 좋아하시는군요.");
+	}
+</script>
+</head>
+<body>
+<form>
+	<h3>좋아하는 색깔을 선택하세요</h3>
+	<select id="sel" onChange="check()">					<!-- size=3: 선택창에서 보여지는 객채 수 multiple: 다중선택 -->
+		<option value="">색깔 선택</option>
+		<option value="red">빨강</option>
+		<option value="blue">파랑</option>
+		<option value="yellow">노랑</option>
+		<option value="skyblue">하늘색</option>		<!-- selected : 초기선택 지정 -->
+		<option value="orange">오렌지</option>
+	</select>
+	<input type="button" value="확인" onClick="check()">
+</form>
+</body>
+</html>
