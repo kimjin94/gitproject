@@ -278,6 +278,30 @@ public class BoardDAO {
 		
 		return result;
 	}
+	
+	// 글삭제
+	public int delete(int board_num) {
+		int result = 0;
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			con = getConnection();
+			
+			String sql="delete from model2 where board_num=?";
+			
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, board_num);
+			result = pstmt.executeUpdate();		//SQL문 실행
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			if(pstmt != null) try { pstmt.close();}catch(Exception e) {}
+			if(con != null) try { con.close();}catch(Exception e) {}
+		}
+		return result;
+	}
 }
 
 

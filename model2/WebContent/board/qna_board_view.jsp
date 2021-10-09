@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>상세페이지</title>
 </head>
 <body>
 <table border=1 width=400 align=center> 
@@ -36,7 +36,8 @@
 			<input type="button" value="수정"
 			onClick="location.href='./BoardModifyAction.do?board_num=${board.board_num}&page=${page}' ">
 			
-			<input type="button" value="삭제">
+			<input type="button" value="삭제"
+			onClick="location.href='./BoardDeleteAction.do?board_num=${board.board_num}&page=${page}' ">
 			
 			<input type="button" value="목록" 
 			onClick="location.href='./BoardListAction.do?page=${page}' ">
