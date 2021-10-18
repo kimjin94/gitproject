@@ -101,7 +101,7 @@ input[type=text]:focus {
 	padding: 20px;
 	margin-top: 20px;
 }
-
+ 
 /* Set a style for all buttons */
 .btn {
 	border: none;
