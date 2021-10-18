@@ -288,24 +288,6 @@ input[type=text]:focus {
 				<button class="btn 로그인">로그인</button>
 				<button class="btn 회원가입">회원가입</button>
 			</div>
-			
-			<div class="card">
-				<h3>Popular Post</h3>
-				<div class="fakeimg">
-					<p>Image</p>
-				</div>
-				<div class="fakeimg">
-					<p>Image</p>
-				</div>
-				<div class="fakeimg">
-					<p>Image</p>
-				</div>
-			</div>
-			<div class="card">
-				<h3>Follow Me</h3>
-				<p>Some text..</p>
-			</div>
-			
 		</div>
 	</div>
 
